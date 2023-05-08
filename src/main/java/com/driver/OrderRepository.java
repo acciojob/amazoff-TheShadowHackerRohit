@@ -19,12 +19,12 @@ public class OrderRepository {
         }
 
 
-    public OrderRepository(Map<String, Order> orderMap, Map<String, DeliveryPartner> deliveryPartnerMap, Map<String, String> orderDeliveryPartnerMap, Map<String, List<String>> ordersOfOneDeliverPartnerMap) {
-            this.orderMap = orderMap;
-            this.deliveryPartnerMap = deliveryPartnerMap;
-            this.orderDeliveryPartnerMap = orderDeliveryPartnerMap;
-            this.ordersOfOneDeliverPartnerMap = ordersOfOneDeliverPartnerMap;
-        }
+//    public OrderRepository(Map<String, Order> orderMap, Map<String, DeliveryPartner> deliveryPartnerMap, Map<String, String> orderDeliveryPartnerMap, Map<String, List<String>> ordersOfOneDeliverPartnerMap) {
+//            this.orderMap = orderMap;
+//            this.deliveryPartnerMap = deliveryPartnerMap;
+//            this.orderDeliveryPartnerMap = orderDeliveryPartnerMap;
+//            this.ordersOfOneDeliverPartnerMap = ordersOfOneDeliverPartnerMap;
+//        }
 
 //    public OrderRepository() {
 //        orderMap = new HashMap<>();
