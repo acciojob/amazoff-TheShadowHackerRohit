@@ -10,17 +10,17 @@ import java.util.Map;
 @Repository
 public class OrderRepository {
 
-    private Map<String,Order> orderMap ;
-    private Map<String,DeliveryPartner> deliveryPartnerMap ;
-    private Map<String,String> orderDeliveryPartnerMap ;//orderId,partnerId
-    private Map<String, List<String>> ordersOfOneDeliverPartnerMap ;//partnerId, list of orderId
+    private Map<String,Order> orderMap = new HashMap<>();
+    private Map<String,DeliveryPartner> deliveryPartnerMap = deliveryPartnerMap = new HashMap<>() ;
+    private Map<String,String> orderDeliveryPartnerMap = new HashMap<>() ;//orderId,partnerId
+    private Map<String, List<String>> ordersOfOneDeliverPartnerMap = new HashMap<>();//partnerId, list of orderId
 
-    public OrderRepository() {
-        orderMap = new HashMap<>();
-        deliveryPartnerMap = new HashMap<>();
-        orderDeliveryPartnerMap = new HashMap<>();//orderId,partnerId
-        ordersOfOneDeliverPartnerMap = new HashMap<>();//partnerId, list of orderId
-    }
+//    public OrderRepository() {
+//        orderMap = new HashMap<>();
+//        deliveryPartnerMap = new HashMap<>();
+//        orderDeliveryPartnerMap = new HashMap<>();//orderId,partnerId
+//        ordersOfOneDeliverPartnerMap = new HashMap<>();//partnerId, list of orderId
+//    }
 
     public void saveOrder(Order order) {
         orderMap.put(order.getId(),order);

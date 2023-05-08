@@ -19,7 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/orders")
 public class OrderController {
 
-    OrderService orderService = new OrderService();
+    @Autowired
+    OrderService orderService ;
 
     /*
     Add an Order: POST /orders/add-order Pass the Order object as request body
