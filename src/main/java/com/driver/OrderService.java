@@ -9,11 +9,15 @@ import java.util.List;
 @Service
 public class OrderService {
     @Autowired
-    OrderRepository orderRepository ;
+    OrderRepository orderRepository;
 
-//    public OrderService() {
-//        orderRepository = new OrderRepository();
-//    }
+    public OrderService() {
+        this.orderRepository=new OrderRepository();
+    }
+
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
 
     public void addOrder(Order order) {
         orderRepository.saveOrder(order);
