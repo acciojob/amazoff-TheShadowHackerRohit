@@ -7,7 +7,12 @@ import java.util.List;
 
 @Service
 public class OrderService {
-    OrderRepository orderRepository = new OrderRepository();
+    OrderRepository orderRepository ;
+
+    public OrderService() {
+        orderRepository = new OrderRepository();
+    }
+
     public void addOrder(Order order) {
         orderRepository.saveOrder(order);
     }
