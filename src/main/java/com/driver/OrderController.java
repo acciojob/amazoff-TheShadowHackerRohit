@@ -26,9 +26,9 @@ public class OrderController {
 //        this.orderService = new OrderService();
 //    }
 
-    public OrderController(OrderService orderService) {
-        this.orderService = orderService;
-    }
+//    public OrderController(OrderService orderService) {
+//        this.orderService = orderService;
+//    }
     /*
     Add an Order: POST /orders/add-order Pass the Order object as request body
      Return success message wrapped in a ResponseEntity object Controller Name - addOrder
