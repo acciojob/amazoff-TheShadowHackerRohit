@@ -15,9 +15,9 @@ public class OrderService {
         this.orderRepository=new OrderRepository();
     }
 
-//    public OrderService(OrderRepository orderRepository) {
-//        this.orderRepository = orderRepository;
-//    }
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
 
     public void addOrder(Order order) {
         orderRepository.saveOrder(order);
@@ -28,7 +28,7 @@ public class OrderService {
     }
 
     public void addOrderPartnerPair(String orderId, String partnerId) {
-//        Order order = getOrderById(orderId);
+
         DeliveryPartner deliveryPartner = getPartnerById(partnerId);
 
         int numberOfOrders = deliveryPartner.getNumberOfOrders();
@@ -70,7 +70,7 @@ public class OrderService {
     }
 
     public Integer getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId) {
-        //countOfOrders that are left after a particular time of a DeliveryPartner
+
         int count = 0;
         List<String> allOrders = orderRepository.getAllOrdersFromADeliverPartner(partnerId);
         for(String orderId : allOrders){
